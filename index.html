@@ -81,7 +81,6 @@
     word-break: keep-all;
   }
   .package-card {
-    grid-column: 1 / -1;
     background: linear-gradient(135deg, #f8fdfb, #e8f5e9);
     border: 3px solid var(--green);
     border-top: 6px solid var(--green);
@@ -89,6 +88,34 @@
     position: relative;
     margin-top: 1rem;
     padding-top: 2rem;
+  }
+  .claim-card {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 6px solid var(--orange);
+  }
+  .claim-card h3 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .claim-card p {
+    color: #e0e0e0;
+    margin-bottom: 0.75rem;
+  }
+  .claim-card .btn {
+    background: var(--orange);
+    color: var(--dark);
+    font-size: 1.05rem;
+    padding: 0.85rem 1.6rem;
+  }
+  .claim-card .btn:hover {
+    background: #e08a3a;
   }
   .package-card .badge {
     position: absolute;
@@ -195,21 +222,6 @@
     color: var(--teal);
     font-weight: bold;
   }
-  .contact {
-    text-align: center;
-    background: var(--dark);
-    color: white;
-    padding: 3rem 1.5rem;
-    border-radius: 16px;
-  }
-  .contact h2 {
-    margin-bottom: 1rem;
-  }
-  .contact a {
-    color: var(--accent);
-    font-size: 1.3rem;
-    font-weight: 600;
-  }
   footer {
     text-align: center;
     padding: 2rem;
@@ -225,6 +237,7 @@
       font-size: 1.1rem;
     }
     .package-card h3 { font-size: 1.3rem; }
+    .claim-card { min-height: 220px; }
   }
 </style>
 </head>
@@ -253,6 +266,13 @@
       <div class="price">$4,499 <span>asking</span></div>
       <p class="savings">Regular total $5,396 — You save $897 (17% off)</p>
       <p class="est">Secure the complete brand family in one purchase. Own every variation for Canadian wellness, therapy, or lifestyle use. Preferred option — full control and no competition on the name.</p>
+    </div>
+
+    <div class="card claim-card">
+      <h3>Claim Your Domain</h3>
+      <p>Serious inquiries only. Fast, secure transfer via escrow (Escrow.com or similar).</p>
+      <p style="font-weight:600; color:#fff;">All prices and payments in CAD only.</p>
+      <a href="https://form.jotform.com/263076958772069" class="btn">Claim Your Domain</a>
     </div>
 
     <div class="card">
@@ -294,13 +314,6 @@
       <li><strong>Local Relevance</strong> — "Uptown" resonates with Canadian neighborhood clinics</li>
       <li><strong>Clean & Available</strong> — Ready for immediate use, no trademark conflicts noted</li>
     </ul>
-  </section>
-
-  <section class="contact">
-    <h2>Claim Your Domain</h2>
-    <p>Serious inquiries only. Fast, secure transfer via escrow (Escrow.com or similar).</p>
-    <p style="margin:1rem 0; font-weight:600;">All prices and payments in CAD only.</p>
-    <a href="https://form.jotform.com/263076958772069" class="btn" style="font-size:1.1rem; padding:0.9rem 2rem;">Claim Your Domain</a>
   </section>
 </div>
 
